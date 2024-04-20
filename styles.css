@@ -1,5 +1,6 @@
 body {
     background-color: rgba(32, 50, 50, 0.918);
+    box-sizing: border-box;
 }
 
 body {
@@ -14,34 +15,49 @@ body {
 #calc-container {
     display: flex;
     flex-flow: row wrap;
-    width: 13em;
-    gap: 4px;
+    width: 13.6em;
+    gap: 8px;
     justify-content: center;
+    padding: 8px;
+    border-radius: 8px;
+    background-image: linear-gradient(rgba(12, 20, 20, 0.918), rgba(33, 51, 51, 0));
+}
+
+.main-container {
+    border-style:groove;
+    border: 4px inset black;
+    border-radius: 14px;
+    padding: 12px;
+    background-image: linear-gradient(rgba(33, 51, 51, 0), rgba(12, 20, 20, 0.282));
 }
 
 button {
     height: 5em;
     width: 5em;
-    padding: 8px;
+    padding: 6px;
     flex: 0 0 auto;
     box-shadow: 0;
+    border-radius: 50px;
 }
 
-.equal-sign {
+#equal {
     background-color: rgb(65, 199, 152);
 }
 
 .display {
     text-align: end;
-    width: 13em;
-    height: 4em;
-    border: 1px dotted grey;
-    border-radius: 4px;
-    margin-bottom: 6px;
+    max-width: 228px;
+    min-width: 228px;
+    height: 70px;
+    border: 4px outset grey;
+    border-radius: 8px;
+    margin-bottom: 10px;
     background-color: rgba(89, 97, 97, 0.918);
     color: white;
-    font-size: 16px;
+    font-size: 32px;
     font-weight: 500;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .operator {
