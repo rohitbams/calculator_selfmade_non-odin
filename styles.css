@@ -45,6 +45,7 @@ button {
 }
 
 .display {
+    filter:brightness(57%);
     text-align: end;
     max-width: 228px;
     min-width: 228px;
@@ -58,6 +59,12 @@ button {
     font-weight: 500;
     padding: 0;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.display:focus-within {
+    filter:brightness(170%);
+    outline: 0;
+
 }
 
 .operator {
