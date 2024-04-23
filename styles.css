@@ -42,6 +42,12 @@ body {
     padding: 18px;
 }
 
+a {
+    color:rgb(151, 198, 200);
+    text-decoration: none;
+    padding: 10px;
+}
+
 button {
     min-height: 5em;
     max-height: 5em;
@@ -79,7 +85,7 @@ button:active {
     background-color: rgba(32, 50, 50);
     box-shadow: 
             4px 4px 6px 0  rgba(0, 0, 0, 0.399),
-            -4px -4px 8px 0 rgba(113, 134, 134, 0.137);
+            -3px -3px 8px 0 rgba(113, 134, 134, 0.137);
     padding-right: 20px;
     color: white;
     font-size: 32px;
@@ -107,4 +113,13 @@ button:active {
 
 #equal {
     background-color: rgb(43, 65, 65);
+}
+
+#switch-design {
+    min-width: 8em;
+    max-width: 8em;
+    min-height: 2.6em;
+    max-height: 2.6em;
+    flex: 0;
+    margin-bottom: 4em;
 }

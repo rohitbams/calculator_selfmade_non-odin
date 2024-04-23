@@ -37,6 +37,18 @@ function getValue() {
     
 }
 
+document.getElementById('switch-design').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    let sdValue = document.getElementById('switch-design').value;
+
+
+    if (sdValue === '1') {
+        window.location = './old-design.html';
+    } else {
+        window.location = './index.html';
+    }
+});
 
 
 numberA.textContent = document.querySelector('#number').value;
