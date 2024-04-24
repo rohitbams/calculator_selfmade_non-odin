@@ -100,7 +100,6 @@ button:active {
     transition: box-shadow .2s ease;
 }
 
-
 .operator {
     background-color: rgb(247, 206, 152);
 }
