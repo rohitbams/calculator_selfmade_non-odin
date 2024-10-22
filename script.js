@@ -1,3 +1,80 @@
+// Function to add characters to the display
+function addToDisplay(value) {
+    document.getElementById("display").value += value;
+}
+
+// Function to reset the display
+function clearDisplay() {
+    document.getElementById("display").value = "";
+}
+
+// Function to perform addition
+function add(a, b) {
+    return parseFloat(a) + parseFloat(b);
+}
+
+// Function to perform subtraction
+function subtract(a, b) {
+    return parseFloat(a) - parseFloat(b);
+}
+
+// Function to perform multiplication
+function multiply(a, b) {
+    return parseFloat(a) * parseFloat(b);
+}
+
+// Function to perform division
+function divide(a, b) {
+    if (b === 0) {
+        return "Error: Division by zero";
+    }
+    return parseFloat(a) / parseFloat(b);
+}
+
+// Function to perform percentage
+function percentage(a, b) {
+    return (parseFloat(a) * parseFloat(b)) / 100;
+}
+
+// Function to calculate the result
+function calculate() {
+    let displayValue = document.getElementById("display").value;
+    let operands = displayValue.split(/[+\-*/%]/);
+    let operator = displayValue.match(/[+\-*/%]/);
+    if (operands.length !== 2 || !operator) {
+        document.getElementById("display").value = "Error: Invalid expression";
+        return;
+    }
+    let result;
+    switch (operator[0]) {
+        case '+':
+            result = add(operands[0], operands[1]);
+            break;
+        case '-':
+            result = subtract(operands[0], operands[1]);
+            break;
+        case '*':
+            result = multiply(operands[0], operands[1]);
+            break;
+        case '/':
+            result = divide(operands[0], operands[1]);
+            break;
+        case '%':
+            result = percentage(operands[0], operands[1]);
+            break;
+        default:
+            result = "Error: Invalid operator";
+    }
+    document.getElementById("display").value = result;
+}
+
+
+
+
+
+
+/*
+
 // first create a string calculator to get numberA value ie, on pressing each digit
 // you should get string value of that digit and add the string value of the next digit
 // and add those strings to get a number of multiple place value.
@@ -126,3 +203,5 @@ else {
     display = ('Please enter the correct operator');
 }
 }
+
+*/
